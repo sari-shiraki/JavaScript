@@ -16,7 +16,7 @@
   function countUp() {
     console.log(Date.now() - startTime);
     const d = new Date(Date.now() - startTime + elapsedTime);
-    const h = d.getHours();
+    const h = d.getUTCHours();
     const m = d.getMinutes();
     const s = d.getSeconds();
     const ms = String(d.getMilliseconds()).substr(0, 1);
